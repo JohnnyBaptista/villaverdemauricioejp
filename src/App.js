@@ -1,12 +1,25 @@
 import React, { Component } from 'react';
 import './App.css';
+import Background from './hotelbackground.jpg';
+import LogoVV from './logoVV.png';
+
+var sectionStyle = {
+  width: "100%",
+  height: "100%",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "145%",
+  filter: "brightness(50%)",
+  backgroundImage: `url(${Background})`
+}
 
 class App extends Component {
   render() {
     return (
       <div className="App">
 
-        <div className="App__Aside"></div>
+        <div className="App__Aside">
+          <section style={ sectionStyle }></section>
+        </div>
 
         <div className="App__Form">
 
